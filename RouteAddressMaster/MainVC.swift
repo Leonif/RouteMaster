@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MainVC: UIViewController, MKLocalSearchCompleterDelegate {
+class MainVC: UIViewController  {
     
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var addressTableView: UITableView!
@@ -21,12 +21,13 @@ class MainVC: UIViewController, MKLocalSearchCompleterDelegate {
         
         
         searchCompleter.delegate = self
-        searchCompleter.queryFragment = addressTextField.text!
+        
         
         
     }
     @IBAction func addressChanged(_ sender: Any) {
         print(addressTextField.text ?? "")
+        searchCompleter.queryFragment = addressTextField.text!
     }
 
     
@@ -37,27 +38,31 @@ class MainVC: UIViewController, MKLocalSearchCompleterDelegate {
 extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return searchResults.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let searchResult = searchResults[indexPath.row]
+        let cell = addressTableView.dequeueReusableCell(withIdentifier: "MapCell") as! MapPointCell
+        cell.pointTitle.text = searchResult.title
         
-        return UITableViewCell()
+        return cell
     }
     
 }
 
 
 
-extension MainVC {
+extension MainVC: MKLocalSearchCompleterDelegate {
     
-    func completerDidUpdateResults(completer: MKLocalSearchCompleter) {
+    func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
         searchResults = completer.results
-        searchResultsTableView.reloadData()
+        addressTableView.reloadData()
     }
     
-    func completer(completer: MKLocalSearchCompleter, didFailWithError error: NSError) {
+    func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: Error) {
         // handle error
+        
     }
 }
 
