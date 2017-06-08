@@ -91,6 +91,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Q6X-iy-YTT"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="y2w-qa-aJt"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJ2-Q2-4FS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
@@ -115,6 +119,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addressTableView" destination="mG1-FW-49P" id="EGC-rJ-TTT"/>
                         <outlet property="addressTextField" destination="ytJ-Za-dOy" id="dDB-oC-J2d"/>
                         <segue destination="gnh-qG-8GO" kind="show" id="TDw-Ox-TPz"/>
                     </connections>

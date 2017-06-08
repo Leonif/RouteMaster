@@ -7,16 +7,21 @@
 //
 
 import UIKit
+import MapKit
 
-class MainVC: UIViewController {
+class MainVC: UIViewController, MKLocalSearchCompleterDelegate {
     
     @IBOutlet weak var addressTextField: UITextField!
-    
+    @IBOutlet weak var addressTableView: UITableView!
+    var searchResults = [MKLocalSearchCompletion]()
+    var searchCompleter = MKLocalSearchCompleter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+        searchCompleter.delegate = self
+        searchCompleter.queryFragment = addressTextField.text!
         
         
     }
@@ -24,8 +29,35 @@ class MainVC: UIViewController {
         print(addressTextField.text ?? "")
     }
 
+    
+
+
+}
+
+extension MainVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        return UITableViewCell()
+    }
+    
+}
 
 
+
+extension MainVC {
+    
+    func completerDidUpdateResults(completer: MKLocalSearchCompleter) {
+        searchResults = completer.results
+        searchResultsTableView.reloadData()
+    }
+    
+    func completer(completer: MKLocalSearchCompleter, didFailWithError error: NSError) {
+        // handle error
+    }
 }
 
