@@ -53,7 +53,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-OR-ipa">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-OR-ipa">
                                                             <rect key="frame" x="10" y="8" width="55" height="53"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="53" id="7tL-SU-hel"/>
