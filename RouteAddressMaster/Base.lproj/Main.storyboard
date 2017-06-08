@@ -31,7 +31,6 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="addressChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="a7Q-IY-Iqq"/>
-                                    <action selector="addressEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="kgx-ZP-IO7"/>
                                 </connections>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mG1-FW-49P">

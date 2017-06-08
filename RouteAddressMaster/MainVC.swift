@@ -24,12 +24,7 @@ class MainVC: UIViewController {
         print(addressTextField.text ?? "")
     }
 
-    @IBAction func addressEdit(_ sender: Any) {
         
-        print(addressTextField.text ?? "")
-        
-    }
-    
 
 
 }
