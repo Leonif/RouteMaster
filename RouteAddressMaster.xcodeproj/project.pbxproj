@@ -13,6 +13,7 @@
 		792EE7DC1EE99CA700470669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7DB1EE99CA700470669 /* Assets.xcassets */; };
 		792EE7DF1EE99CA700470669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7DD1EE99CA700470669 /* LaunchScreen.storyboard */; };
 		792EE7EB1EE9BBB700470669 /* MapPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7EA1EE9BBB700470669 /* MapPointCell.swift */; };
+		792EE7ED1EE9CEA400470669 /* RouteMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7EC1EE9CEA300470669 /* RouteMapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		792EE7DE1EE99CA700470669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		792EE7E01EE99CA700470669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		792EE7EA1EE9BBB700470669 /* MapPointCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPointCell.swift; sourceTree = "<group>"; };
+		792EE7EC1EE9CEA300470669 /* RouteMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteMapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +69,9 @@
 		792EE7E61EE9BB5C00470669 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				792EE7D41EE99CA700470669 /* AppDelegate.swift */,
 				792EE7D61EE99CA700470669 /* MainVC.swift */,
+				792EE7EC1EE9CEA300470669 /* RouteMapVC.swift */,
+				792EE7D41EE99CA700470669 /* AppDelegate.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				792EE7EB1EE9BBB700470669 /* MapPointCell.swift in Sources */,
+				792EE7ED1EE9CEA400470669 /* RouteMapVC.swift in Sources */,
 				792EE7D71EE99CA700470669 /* MainVC.swift in Sources */,
 				792EE7D51EE99CA700470669 /* AppDelegate.swift in Sources */,
 			);
@@ -338,6 +342,7 @@
 				792EE7E51EE99CA700470669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

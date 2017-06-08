@@ -12,5 +12,6 @@ class MapPointCell: UITableViewCell {
 
     @IBOutlet weak var pointImg: UIImageView!
     @IBOutlet weak var pointTitle: UILabel!
+    @IBOutlet weak var pointSubtitle: UILabel!
 
 }

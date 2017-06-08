@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ytJ-Za-dOy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input address..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ytJ-Za-dOy">
                                 <rect key="frame" x="8" y="90" width="304" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hEv-lI-YO2"/>
@@ -33,7 +33,7 @@
                                     <action selector="addressChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="a7Q-IY-Iqq"/>
                                 </connections>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mG1-FW-49P">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="113" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mG1-FW-49P">
                                 <rect key="frame" x="0.0" y="138" width="320" height="430"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -41,34 +41,42 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hCa-CA-bhN" id="tEq-xk-GP3">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZB-EO-dnh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                                                    <rect key="frame" x="5" y="2" width="310" height="61.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Киев, ул Анны Ахматовой 19Г" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aBn-QX-9rF">
-                                                            <rect key="frame" x="73" y="24" width="239" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зоопарк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aBn-QX-9rF">
+                                                            <rect key="frame" x="48" y="18.5" width="254" height="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-OR-ipa">
-                                                            <rect key="frame" x="10" y="8" width="55" height="53"/>
+                                                            <rect key="frame" x="10" y="16" width="30" height="30"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="53" id="7tL-SU-hel"/>
-                                                                <constraint firstAttribute="width" constant="55" id="sOy-14-N65"/>
+                                                                <constraint firstAttribute="height" constant="30" id="7tL-SU-hel"/>
+                                                                <constraint firstAttribute="width" constant="30" id="sOy-14-N65"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Киев, ул Анны Ахматовой 19Г" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3oJ-7e-5uc">
+                                                            <rect key="frame" x="48" y="37.5" width="254" height="14.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="0.9075592884" blue="0.42212387340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="QBP-OR-ipa" firstAttribute="top" secondItem="qZB-EO-dnh" secondAttribute="top" constant="8" id="AW3-oY-cxY"/>
-                                                        <constraint firstItem="aBn-QX-9rF" firstAttribute="centerY" secondItem="qZB-EO-dnh" secondAttribute="centerY" id="J5V-TO-ade"/>
-                                                        <constraint firstItem="QBP-OR-ipa" firstAttribute="leading" secondItem="qZB-EO-dnh" secondAttribute="leading" constant="10" id="PHf-cJ-W4K"/>
-                                                        <constraint firstAttribute="bottom" secondItem="QBP-OR-ipa" secondAttribute="bottom" constant="8" id="Yok-3Q-dI1"/>
-                                                        <constraint firstAttribute="trailing" secondItem="aBn-QX-9rF" secondAttribute="trailing" constant="8" id="f8R-A6-Uec"/>
-                                                        <constraint firstItem="aBn-QX-9rF" firstAttribute="leading" secondItem="QBP-OR-ipa" secondAttribute="trailing" constant="8" id="wYI-Ii-Alh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3oJ-7e-5uc" secondAttribute="trailing" constant="8" id="17a-wY-QGQ"/>
+                                                        <constraint firstItem="3oJ-7e-5uc" firstAttribute="top" secondItem="aBn-QX-9rF" secondAttribute="bottom" constant="4.5" id="1gF-2k-pPj"/>
+                                                        <constraint firstItem="aBn-QX-9rF" firstAttribute="leading" secondItem="QBP-OR-ipa" secondAttribute="trailing" constant="8" id="4LR-LO-W3J"/>
+                                                        <constraint firstItem="QBP-OR-ipa" firstAttribute="centerY" secondItem="qZB-EO-dnh" secondAttribute="centerY" id="89Y-fh-Mtb"/>
+                                                        <constraint firstItem="QBP-OR-ipa" firstAttribute="leading" secondItem="qZB-EO-dnh" secondAttribute="leading" constant="10" id="TUS-k6-zyL"/>
+                                                        <constraint firstItem="aBn-QX-9rF" firstAttribute="centerY" secondItem="qZB-EO-dnh" secondAttribute="centerY" constant="-5" id="UZX-c9-MOR"/>
+                                                        <constraint firstAttribute="trailing" secondItem="aBn-QX-9rF" secondAttribute="trailing" constant="8" id="ifk-Nb-vPX"/>
+                                                        <constraint firstItem="3oJ-7e-5uc" firstAttribute="leading" secondItem="QBP-OR-ipa" secondAttribute="trailing" constant="8" id="nvs-Uk-bEu"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -78,15 +86,15 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qZB-EO-dnh" firstAttribute="leading" secondItem="tEq-xk-GP3" secondAttribute="leading" id="M7K-Pw-vNe"/>
-                                                <constraint firstItem="qZB-EO-dnh" firstAttribute="top" secondItem="tEq-xk-GP3" secondAttribute="top" id="aRn-az-oLo"/>
-                                                <constraint firstAttribute="bottom" secondItem="qZB-EO-dnh" secondAttribute="bottom" id="gIT-Yg-yWM"/>
-                                                <constraint firstAttribute="trailing" secondItem="qZB-EO-dnh" secondAttribute="trailing" id="gOy-q7-arM"/>
+                                                <constraint firstItem="qZB-EO-dnh" firstAttribute="leading" secondItem="tEq-xk-GP3" secondAttribute="leading" constant="5" id="M7K-Pw-vNe"/>
+                                                <constraint firstItem="qZB-EO-dnh" firstAttribute="top" secondItem="tEq-xk-GP3" secondAttribute="top" constant="2" id="aRn-az-oLo"/>
+                                                <constraint firstAttribute="bottom" secondItem="qZB-EO-dnh" secondAttribute="bottom" constant="5" id="gIT-Yg-yWM"/>
+                                                <constraint firstAttribute="trailing" secondItem="qZB-EO-dnh" secondAttribute="trailing" constant="5" id="gOy-q7-arM"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.93590015479999999" green="0.89439511230000002" blue="0.55457293669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="pointImg" destination="QBP-OR-ipa" id="4d8-YB-r4V"/>
+                                            <outlet property="pointSubtitle" destination="3oJ-7e-5uc" id="xxa-Tb-uzt"/>
                                             <outlet property="pointTitle" destination="aBn-QX-9rF" id="Cry-7r-Xrk"/>
                                         </connections>
                                     </tableViewCell>
@@ -121,17 +129,17 @@
                     <connections>
                         <outlet property="addressTableView" destination="mG1-FW-49P" id="EGC-rJ-TTT"/>
                         <outlet property="addressTextField" destination="ytJ-Za-dOy" id="dDB-oC-J2d"/>
-                        <segue destination="gnh-qG-8GO" kind="show" id="TDw-Ox-TPz"/>
+                        <segue destination="gnh-qG-8GO" kind="show" identifier="showRoute" id="TDw-Ox-TPz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135" y="134.1549295774648"/>
         </scene>
-        <!--View Controller-->
+        <!--Route MapVC-->
         <scene sceneID="a5R-Z0-hx6">
             <objects>
-                <viewController id="gnh-qG-8GO" sceneMemberID="viewController">
+                <viewController id="gnh-qG-8GO" customClass="RouteMapVC" customModule="RouteAddressMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t67-fc-E14"/>
                         <viewControllerLayoutGuide type="bottom" id="fZk-Pe-Adq"/>
