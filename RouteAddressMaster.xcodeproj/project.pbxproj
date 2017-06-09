@@ -14,10 +14,18 @@
 		792EE7DF1EE99CA700470669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7DD1EE99CA700470669 /* LaunchScreen.storyboard */; };
 		792EE7EB1EE9BBB700470669 /* MapPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7EA1EE9BBB700470669 /* MapPointCell.swift */; };
 		792EE7ED1EE9CEA400470669 /* RouteMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7EC1EE9CEA300470669 /* RouteMapVC.swift */; };
+		79C0DB2E1EEA7CB10042A0C5 /* MapPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7EA1EE9BBB700470669 /* MapPointCell.swift */; };
+		79C0DB2F1EEA7CB10042A0C5 /* RouteMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7EC1EE9CEA300470669 /* RouteMapVC.swift */; };
+		79C0DB301EEA7CB10042A0C5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7D61EE99CA700470669 /* MainVC.swift */; };
+		79C0DB311EEA7CB10042A0C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7D41EE99CA700470669 /* AppDelegate.swift */; };
+		79C0DB341EEA7CB10042A0C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7DD1EE99CA700470669 /* LaunchScreen.storyboard */; };
+		79C0DB351EEA7CB10042A0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7DB1EE99CA700470669 /* Assets.xcassets */; };
+		79C0DB361EEA7CB10042A0C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7D81EE99CA700470669 /* Main.storyboard */; };
+		79C0DB3D1EEA7FE90042A0C5 /* IOS90.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C0DB3C1EEA7FE90042A0C5 /* IOS90.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		792EE7D11EE99CA700470669 /* RouteAddressMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteAddressMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		792EE7D11EE99CA700470669 /* RouteAddressMaster IOS 9.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RouteAddressMaster IOS 9.3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		792EE7D41EE99CA700470669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		792EE7D61EE99CA700470669 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		792EE7D91EE99CA700470669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,10 +34,20 @@
 		792EE7E01EE99CA700470669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		792EE7EA1EE9BBB700470669 /* MapPointCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPointCell.swift; sourceTree = "<group>"; };
 		792EE7EC1EE9CEA300470669 /* RouteMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteMapVC.swift; sourceTree = "<group>"; };
+		79C0DB3A1EEA7CB10042A0C5 /* RouteAddressMaster IOS 9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RouteAddressMaster IOS 9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C0DB3B1EEA7CB10042A0C5 /* RouteAddressMaster copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RouteAddressMaster copy-Info.plist"; path = "/Users/leonif1/CODDING/TEST TASKS/RouteAddressMaster/RouteAddressMaster copy-Info.plist"; sourceTree = "<absolute>"; };
+		79C0DB3C1EEA7FE90042A0C5 /* IOS90.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IOS90.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		792EE7CE1EE99CA700470669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C0DB321EEA7CB10042A0C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,13 +62,15 @@
 			children = (
 				792EE7D31EE99CA700470669 /* RouteAddressMaster */,
 				792EE7D21EE99CA700470669 /* Products */,
+				79C0DB3B1EEA7CB10042A0C5 /* RouteAddressMaster copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		792EE7D21EE99CA700470669 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				792EE7D11EE99CA700470669 /* RouteAddressMaster.app */,
+				792EE7D11EE99CA700470669 /* RouteAddressMaster IOS 9.3.app */,
+				79C0DB3A1EEA7CB10042A0C5 /* RouteAddressMaster IOS 9.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +101,7 @@
 			children = (
 				792EE7EA1EE9BBB700470669 /* MapPointCell.swift */,
 				792EE7D81EE99CA700470669 /* Main.storyboard */,
+				79C0DB3C1EEA7FE90042A0C5 /* IOS90.storyboard */,
 				792EE7DD1EE99CA700470669 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -105,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		792EE7D01EE99CA700470669 /* RouteAddressMaster */ = {
+		792EE7D01EE99CA700470669 /* RouteAddressMaster IOS 9.3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 792EE7E31EE99CA700470669 /* Build configuration list for PBXNativeTarget "RouteAddressMaster" */;
+			buildConfigurationList = 792EE7E31EE99CA700470669 /* Build configuration list for PBXNativeTarget "RouteAddressMaster IOS 9.3" */;
 			buildPhases = (
 				792EE7CD1EE99CA700470669 /* Sources */,
 				792EE7CE1EE99CA700470669 /* Frameworks */,
@@ -117,9 +138,26 @@
 			);
 			dependencies = (
 			);
-			name = RouteAddressMaster;
+			name = "RouteAddressMaster IOS 9.3";
 			productName = RouteAddressMaster;
-			productReference = 792EE7D11EE99CA700470669 /* RouteAddressMaster.app */;
+			productReference = 792EE7D11EE99CA700470669 /* RouteAddressMaster IOS 9.3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79C0DB2C1EEA7CB10042A0C5 /* RouteAddressMaster IOS 9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79C0DB371EEA7CB10042A0C5 /* Build configuration list for PBXNativeTarget "RouteAddressMaster IOS 9" */;
+			buildPhases = (
+				79C0DB2D1EEA7CB10042A0C5 /* Sources */,
+				79C0DB321EEA7CB10042A0C5 /* Frameworks */,
+				79C0DB331EEA7CB10042A0C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RouteAddressMaster IOS 9";
+			productName = RouteAddressMaster;
+			productReference = 79C0DB3A1EEA7CB10042A0C5 /* RouteAddressMaster IOS 9.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,6 +175,9 @@
 						DevelopmentTeam = 379294YDPQ;
 						ProvisioningStyle = Automatic;
 					};
+					79C0DB2C1EEA7CB10042A0C5 = {
+						DevelopmentTeam = 379294YDPQ;
+					};
 				};
 			};
 			buildConfigurationList = 792EE7CC1EE99CA700470669 /* Build configuration list for PBXProject "RouteAddressMaster" */;
@@ -152,7 +193,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				792EE7D01EE99CA700470669 /* RouteAddressMaster */,
+				792EE7D01EE99CA700470669 /* RouteAddressMaster IOS 9.3 */,
+				79C0DB2C1EEA7CB10042A0C5 /* RouteAddressMaster IOS 9 */,
 			);
 		};
 /* End PBXProject section */
@@ -165,6 +207,17 @@
 				792EE7DF1EE99CA700470669 /* LaunchScreen.storyboard in Resources */,
 				792EE7DC1EE99CA700470669 /* Assets.xcassets in Resources */,
 				792EE7DA1EE99CA700470669 /* Main.storyboard in Resources */,
+				79C0DB3D1EEA7FE90042A0C5 /* IOS90.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C0DB331EEA7CB10042A0C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C0DB341EEA7CB10042A0C5 /* LaunchScreen.storyboard in Resources */,
+				79C0DB351EEA7CB10042A0C5 /* Assets.xcassets in Resources */,
+				79C0DB361EEA7CB10042A0C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +232,17 @@
 				792EE7ED1EE9CEA400470669 /* RouteMapVC.swift in Sources */,
 				792EE7D71EE99CA700470669 /* MainVC.swift in Sources */,
 				792EE7D51EE99CA700470669 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C0DB2D1EEA7CB10042A0C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C0DB2E1EEA7CB10042A0C5 /* MapPointCell.swift in Sources */,
+				79C0DB2F1EEA7CB10042A0C5 /* RouteMapVC.swift in Sources */,
+				79C0DB301EEA7CB10042A0C5 /* MainVC.swift in Sources */,
+				79C0DB311EEA7CB10042A0C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,9 +364,10 @@
 		792EE7E41EE99CA700470669 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-93";
 				DEVELOPMENT_TEAM = 379294YDPQ;
 				INFOPLIST_FILE = RouteAddressMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LionLife.RouteAddressMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -313,9 +378,38 @@
 		792EE7E51EE99CA700470669 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-93";
 				DEVELOPMENT_TEAM = 379294YDPQ;
 				INFOPLIST_FILE = RouteAddressMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LionLife.RouteAddressMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		79C0DB381EEA7CB10042A0C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-90";
+				DEVELOPMENT_TEAM = 379294YDPQ;
+				INFOPLIST_FILE = "RouteAddressMaster copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LionLife.RouteAddressMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		79C0DB391EEA7CB10042A0C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-90";
+				DEVELOPMENT_TEAM = 379294YDPQ;
+				INFOPLIST_FILE = "RouteAddressMaster copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LionLife.RouteAddressMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,11 +429,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		792EE7E31EE99CA700470669 /* Build configuration list for PBXNativeTarget "RouteAddressMaster" */ = {
+		792EE7E31EE99CA700470669 /* Build configuration list for PBXNativeTarget "RouteAddressMaster IOS 9.3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				792EE7E41EE99CA700470669 /* Debug */,
 				792EE7E51EE99CA700470669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79C0DB371EEA7CB10042A0C5 /* Build configuration list for PBXNativeTarget "RouteAddressMaster IOS 9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79C0DB381EEA7CB10042A0C5 /* Debug */,
+				79C0DB391EEA7CB10042A0C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

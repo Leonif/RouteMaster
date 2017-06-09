@@ -4,15 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>RouteAddressMaster.xcscheme</key>
+		<key>RouteAddressMaster IOS 9.3.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>RouteAddressMaster IOS 9.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>792EE7D01EE99CA700470669</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C0DB2C1EEA7CB10042A0C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

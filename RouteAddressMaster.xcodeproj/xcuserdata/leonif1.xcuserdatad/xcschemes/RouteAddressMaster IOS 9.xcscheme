@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "792EE7D01EE99CA700470669"
-               BuildableName = "RouteAddressMaster.app"
-               BlueprintName = "RouteAddressMaster"
+               BlueprintIdentifier = "79C0DB2C1EEA7CB10042A0C5"
+               BuildableName = "RouteAddressMaster IOS 9.app"
+               BlueprintName = "RouteAddressMaster IOS 9"
                ReferencedContainer = "container:RouteAddressMaster.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "792EE7D01EE99CA700470669"
-            BuildableName = "RouteAddressMaster.app"
-            BlueprintName = "RouteAddressMaster"
+            BlueprintIdentifier = "79C0DB2C1EEA7CB10042A0C5"
+            BuildableName = "RouteAddressMaster IOS 9.app"
+            BlueprintName = "RouteAddressMaster IOS 9"
             ReferencedContainer = "container:RouteAddressMaster.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "792EE7D01EE99CA700470669"
-            BuildableName = "RouteAddressMaster.app"
-            BlueprintName = "RouteAddressMaster"
+            BlueprintIdentifier = "79C0DB2C1EEA7CB10042A0C5"
+            BuildableName = "RouteAddressMaster IOS 9.app"
+            BlueprintName = "RouteAddressMaster IOS 9"
             ReferencedContainer = "container:RouteAddressMaster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "792EE7D01EE99CA700470669"
-            BuildableName = "RouteAddressMaster.app"
-            BlueprintName = "RouteAddressMaster"
+            BlueprintIdentifier = "79C0DB2C1EEA7CB10042A0C5"
+            BuildableName = "RouteAddressMaster IOS 9.app"
+            BlueprintName = "RouteAddressMaster IOS 9"
             ReferencedContainer = "container:RouteAddressMaster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

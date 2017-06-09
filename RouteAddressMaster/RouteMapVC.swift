@@ -21,6 +21,7 @@ class RouteMapVC: UIViewController{
         mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.follow
         setLocation()
+        centerMapOnLocation()
         
     }
 
@@ -37,6 +38,11 @@ class RouteMapVC: UIViewController{
         let anno = MKPointAnnotation()
         anno.coordinate = CLLCoordType
         mapView.addAnnotation(anno)
+    }
+    
+    func centerMapOnLocation() {
+        let coordinationRegion = MKCoordinateRegionMakeWithDistance(coordinate, 2000, 2000)
+        mapView.setRegion(coordinationRegion, animated: true)
     }
     
     
