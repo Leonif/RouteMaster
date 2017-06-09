@@ -23,29 +23,45 @@ class MainVCSinceIOS93: UIViewController  {
     }
     @IBAction func addressChanged(_ sender: Any) {
         print(addressTextField.text ?? "")
-        searchCompleter.queryFragment = addressTextField.text!
+        searchCompleter.queryFragment = addressTextField.text ?? ""
     }
 }
 
+
+//MARK: Table
 extension MainVCSinceIOS93: UITableViewDelegate, UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchResults.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let searchResult = searchResults[indexPath.row]
-        let cell = addressTableView.dequeueReusableCell(withIdentifier: "MapCell") as! MapPointCell
-        cell.pointTitle.text = searchResult.title
-        cell.pointSubtitle.text = searchResult.subtitle
+            if let cell = addressTableView.dequeueReusableCell(withIdentifier: "MapCell") as? MapPointCell {
+            cell.pointTitle.text = searchResult.title
+            cell.pointSubtitle.text = searchResult.subtitle
+            return cell
+        }
         
-        return cell
+        return UITableViewCell()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showRoute", let routeVC = segue.destination as? RouteMapVC {
+            if let c = sender as? CLLocationCoordinate2D {
+                routeVC.coordinate = c
+            }
+        }
+    }
+    
+}
+
+
+//MARK: Autocomplete
+extension MainVCSinceIOS93: MKLocalSearchCompleterDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
         let completion = searchResults[indexPath.row]
-        
         let searchRequest = MKLocalSearchRequest(completion: completion)
         let search = MKLocalSearch(request: searchRequest)
         search.start { (response, error) in
@@ -54,23 +70,8 @@ extension MainVCSinceIOS93: UITableViewDelegate, UITableViewDataSource {
             self.performSegue(withIdentifier: "showRoute", sender: coordinate)
         }
     }
+
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showRoute", let routeVC = segue.destination as? RouteMapVC {
-            
-            if let c = sender as? CLLocationCoordinate2D {
-            
-                routeVC.coordinate = c
-            
-            }
-        }
-    }
-    
-}
-
-
-
-extension MainVCSinceIOS93: MKLocalSearchCompleterDelegate {
     
     func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
         searchResults = completer.results

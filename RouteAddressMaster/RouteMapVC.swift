@@ -27,7 +27,6 @@ class RouteMapVC: UIViewController{
         currentLocation = locationManager.location?.coordinate
         
     }
-
     override func viewDidAppear(_ animated: Bool) {
         locationAuthStatus()
     }
@@ -37,6 +36,29 @@ class RouteMapVC: UIViewController{
     }
     
     @IBAction func makeRoutePressed(_ sender: Any) {
+        buildRoute()
+    }
+}
+
+// Map works
+extension RouteMapVC: MKMapViewDelegate, CLLocationManagerDelegate  {
+    
+    func setLocation() {
+        let CLLCoordType = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        let anno = MKPointAnnotation()
+        anno.coordinate = CLLCoordType
+        mapView.addAnnotation(anno)
+    }
+    
+    // Increse visibility of place
+    func centerMapOnLocation() {
+        let coordinationRegion = MKCoordinateRegionMakeWithDistance(coordinate, 2000, 2000)
+        mapView.setRegion(coordinationRegion, animated: true)
+    }
+    
+    
+    
+    func buildRoute() {
         let sourcePlacemark = MKPlacemark(coordinate: currentLocation!, addressDictionary: nil)
         let destinationPlacemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
         
@@ -91,27 +113,6 @@ class RouteMapVC: UIViewController{
         }
     }
     
-    
-    
-    func setLocation() {
-        
-        let CLLCoordType = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
-        let anno = MKPointAnnotation()
-        anno.coordinate = CLLCoordType
-        mapView.addAnnotation(anno)
-    }
-    
-    func centerMapOnLocation() {
-        let coordinationRegion = MKCoordinateRegionMakeWithDistance(coordinate, 2000, 2000)
-        mapView.setRegion(coordinationRegion, animated: true)
-    }
-    
-    
-    
-}
-
-// Map works
-extension RouteMapVC: MKMapViewDelegate, CLLocationManagerDelegate  {
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay)
