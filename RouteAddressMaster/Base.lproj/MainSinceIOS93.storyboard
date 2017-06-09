@@ -4,15 +4,14 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MainVC-->
+        <!--MainVC Since iOS93-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="RouteAddressMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVCSinceIOS93" customModule="RouteAddressMaster_IOS_9" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -40,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="138" width="320" height="430"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapCell" rowHeight="69" id="hCa-CA-bhN" customClass="MapPointCell" customModule="RouteAddressMaster" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapCell" rowHeight="69" id="hCa-CA-bhN" customClass="MapPointCell" customModule="RouteAddressMaster_IOS_9" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hCa-CA-bhN" id="tEq-xk-GP3">
@@ -147,7 +146,7 @@
         <!--Route MapVC-->
         <scene sceneID="a5R-Z0-hx6">
             <objects>
-                <viewController id="gnh-qG-8GO" customClass="RouteMapVC" customModule="RouteAddressMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gnh-qG-8GO" customClass="RouteMapVC" customModule="RouteAddressMaster_IOS_9" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t67-fc-E14"/>
                         <viewControllerLayoutGuide type="bottom" id="fZk-Pe-Adq"/>

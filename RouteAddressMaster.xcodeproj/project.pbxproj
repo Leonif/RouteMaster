@@ -8,27 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		792EE7D51EE99CA700470669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7D41EE99CA700470669 /* AppDelegate.swift */; };
-		792EE7D71EE99CA700470669 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7D61EE99CA700470669 /* MainVC.swift */; };
-		792EE7DA1EE99CA700470669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7D81EE99CA700470669 /* Main.storyboard */; };
+		792EE7D71EE99CA700470669 /* MainVCSinceIOS93.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7D61EE99CA700470669 /* MainVCSinceIOS93.swift */; };
+		792EE7DA1EE99CA700470669 /* MainSinceIOS93.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7D81EE99CA700470669 /* MainSinceIOS93.storyboard */; };
 		792EE7DC1EE99CA700470669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7DB1EE99CA700470669 /* Assets.xcassets */; };
 		792EE7DF1EE99CA700470669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7DD1EE99CA700470669 /* LaunchScreen.storyboard */; };
 		792EE7EB1EE9BBB700470669 /* MapPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7EA1EE9BBB700470669 /* MapPointCell.swift */; };
 		792EE7ED1EE9CEA400470669 /* RouteMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7EC1EE9CEA300470669 /* RouteMapVC.swift */; };
 		79C0DB2E1EEA7CB10042A0C5 /* MapPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7EA1EE9BBB700470669 /* MapPointCell.swift */; };
 		79C0DB2F1EEA7CB10042A0C5 /* RouteMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7EC1EE9CEA300470669 /* RouteMapVC.swift */; };
-		79C0DB301EEA7CB10042A0C5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7D61EE99CA700470669 /* MainVC.swift */; };
 		79C0DB311EEA7CB10042A0C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7D41EE99CA700470669 /* AppDelegate.swift */; };
 		79C0DB341EEA7CB10042A0C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7DD1EE99CA700470669 /* LaunchScreen.storyboard */; };
 		79C0DB351EEA7CB10042A0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7DB1EE99CA700470669 /* Assets.xcassets */; };
-		79C0DB361EEA7CB10042A0C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7D81EE99CA700470669 /* Main.storyboard */; };
-		79C0DB3D1EEA7FE90042A0C5 /* IOS90.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C0DB3C1EEA7FE90042A0C5 /* IOS90.storyboard */; };
+		79C0DB361EEA7CB10042A0C5 /* MainSinceIOS93.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7D81EE99CA700470669 /* MainSinceIOS93.storyboard */; };
+		79C0DB411EEA860A0042A0C5 /* MainVCSinceIOS90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0DB3F1EEA82170042A0C5 /* MainVCSinceIOS90.swift */; };
+		79C0DB421EEA86BA0042A0C5 /* MainSinceIOS90.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C0DB3C1EEA7FE90042A0C5 /* MainSinceIOS90.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		792EE7D11EE99CA700470669 /* RouteAddressMaster IOS 9.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RouteAddressMaster IOS 9.3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		792EE7D41EE99CA700470669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		792EE7D61EE99CA700470669 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		792EE7D91EE99CA700470669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		792EE7D61EE99CA700470669 /* MainVCSinceIOS93.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCSinceIOS93.swift; sourceTree = "<group>"; };
+		792EE7D91EE99CA700470669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainSinceIOS93.storyboard; sourceTree = "<group>"; };
 		792EE7DB1EE99CA700470669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		792EE7DE1EE99CA700470669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		792EE7E01EE99CA700470669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,7 +36,8 @@
 		792EE7EC1EE9CEA300470669 /* RouteMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteMapVC.swift; sourceTree = "<group>"; };
 		79C0DB3A1EEA7CB10042A0C5 /* RouteAddressMaster IOS 9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RouteAddressMaster IOS 9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C0DB3B1EEA7CB10042A0C5 /* RouteAddressMaster copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RouteAddressMaster copy-Info.plist"; path = "/Users/leonif1/CODDING/TEST TASKS/RouteAddressMaster/RouteAddressMaster copy-Info.plist"; sourceTree = "<absolute>"; };
-		79C0DB3C1EEA7FE90042A0C5 /* IOS90.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IOS90.storyboard; sourceTree = "<group>"; };
+		79C0DB3C1EEA7FE90042A0C5 /* MainSinceIOS90.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainSinceIOS90.storyboard; sourceTree = "<group>"; };
+		79C0DB3F1EEA82170042A0C5 /* MainVCSinceIOS90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVCSinceIOS90.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +90,8 @@
 		792EE7E61EE9BB5C00470669 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				792EE7D61EE99CA700470669 /* MainVC.swift */,
+				792EE7D61EE99CA700470669 /* MainVCSinceIOS93.swift */,
+				79C0DB3F1EEA82170042A0C5 /* MainVCSinceIOS90.swift */,
 				792EE7EC1EE9CEA300470669 /* RouteMapVC.swift */,
 				792EE7D41EE99CA700470669 /* AppDelegate.swift */,
 			);
@@ -100,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				792EE7EA1EE9BBB700470669 /* MapPointCell.swift */,
-				792EE7D81EE99CA700470669 /* Main.storyboard */,
-				79C0DB3C1EEA7FE90042A0C5 /* IOS90.storyboard */,
+				792EE7D81EE99CA700470669 /* MainSinceIOS93.storyboard */,
+				79C0DB3C1EEA7FE90042A0C5 /* MainSinceIOS90.storyboard */,
 				792EE7DD1EE99CA700470669 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -206,8 +208,7 @@
 			files = (
 				792EE7DF1EE99CA700470669 /* LaunchScreen.storyboard in Resources */,
 				792EE7DC1EE99CA700470669 /* Assets.xcassets in Resources */,
-				792EE7DA1EE99CA700470669 /* Main.storyboard in Resources */,
-				79C0DB3D1EEA7FE90042A0C5 /* IOS90.storyboard in Resources */,
+				792EE7DA1EE99CA700470669 /* MainSinceIOS93.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +218,8 @@
 			files = (
 				79C0DB341EEA7CB10042A0C5 /* LaunchScreen.storyboard in Resources */,
 				79C0DB351EEA7CB10042A0C5 /* Assets.xcassets in Resources */,
-				79C0DB361EEA7CB10042A0C5 /* Main.storyboard in Resources */,
+				79C0DB361EEA7CB10042A0C5 /* MainSinceIOS93.storyboard in Resources */,
+				79C0DB421EEA86BA0042A0C5 /* MainSinceIOS90.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +232,7 @@
 			files = (
 				792EE7EB1EE9BBB700470669 /* MapPointCell.swift in Sources */,
 				792EE7ED1EE9CEA400470669 /* RouteMapVC.swift in Sources */,
-				792EE7D71EE99CA700470669 /* MainVC.swift in Sources */,
+				792EE7D71EE99CA700470669 /* MainVCSinceIOS93.swift in Sources */,
 				792EE7D51EE99CA700470669 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C0DB2E1EEA7CB10042A0C5 /* MapPointCell.swift in Sources */,
+				79C0DB411EEA860A0042A0C5 /* MainVCSinceIOS90.swift in Sources */,
 				79C0DB2F1EEA7CB10042A0C5 /* RouteMapVC.swift in Sources */,
-				79C0DB301EEA7CB10042A0C5 /* MainVC.swift in Sources */,
 				79C0DB311EEA7CB10042A0C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,12 +251,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		792EE7D81EE99CA700470669 /* Main.storyboard */ = {
+		792EE7D81EE99CA700470669 /* MainSinceIOS93.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				792EE7D91EE99CA700470669 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainSinceIOS93.storyboard;
 			sourceTree = "<group>";
 		};
 		792EE7DD1EE99CA700470669 /* LaunchScreen.storyboard */ = {

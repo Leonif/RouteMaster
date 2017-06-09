@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MainVC-->
+        <!--MainVC Since iOS90-->
         <scene sceneID="aPD-p3-ZK5">
             <objects>
-                <viewController id="tb1-U4-N8U" customClass="MainVC" customModule="RouteAddressMaster_IOS_9_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tb1-U4-N8U" customClass="MainVCSinceIOS90" customModule="RouteAddressMaster_IOS_9_3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jgb-Vu-AM4"/>
                         <viewControllerLayoutGuide type="bottom" id="NG5-A5-ukO"/>
@@ -137,7 +137,7 @@
                     <connections>
                         <outlet property="addressTableView" destination="2kh-Bh-4tw" id="PUK-5k-8kd"/>
                         <outlet property="addressTextField" destination="rtH-67-BiH" id="4vk-LV-Lpw"/>
-                        <segue destination="xLP-5d-L3k" kind="show" id="B1p-kS-rcg"/>
+                        <segue destination="xLP-5d-L3k" kind="show" identifier="showRoute" id="B1p-kS-rcg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZD-2L-Dth" sceneMemberID="firstResponder"/>

@@ -9,7 +9,8 @@
 import UIKit
 import MapKit
 
-class MainVC: UIViewController  {
+
+class MainVCSinceIOS93: UIViewController  {
     
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var addressTableView: UITableView!
@@ -26,7 +27,7 @@ class MainVC: UIViewController  {
     }
 }
 
-extension MainVC: UITableViewDelegate, UITableViewDataSource {
+extension MainVCSinceIOS93: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchResults.count
@@ -69,7 +70,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
 
 
 
-extension MainVC: MKLocalSearchCompleterDelegate {
+extension MainVCSinceIOS93: MKLocalSearchCompleterDelegate {
     
     func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
         searchResults = completer.results
