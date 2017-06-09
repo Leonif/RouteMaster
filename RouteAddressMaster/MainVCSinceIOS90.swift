@@ -71,8 +71,10 @@ extension MainVCSinceIOS90: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let searchResult = placemarksResuts?[indexPath.row] {
             let cell = addressTableView.dequeueReusableCell(withIdentifier: "MapCell") as! MapPointCell
-            cell.pointTitle.text = searchResult.name
-            cell.pointSubtitle.text = searchResult.subAdministrativeArea
+            
+            cell.configurePM(result: searchResult)
+            //cell.pointTitle.text = searchResult.name
+            //cell.pointSubtitle.text = searchResult.subAdministrativeArea
             
             return cell
         }

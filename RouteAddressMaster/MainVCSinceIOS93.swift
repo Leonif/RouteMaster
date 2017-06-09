@@ -53,10 +53,9 @@ extension MainVCSinceIOS93: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let searchResult = searchResults[indexPath.row]
             if let cell = addressTableView.dequeueReusableCell(withIdentifier: "MapCell") as? MapPointCell {
-            cell.pointTitle.text = searchResult.title
             
-            cell.pointSubtitle.text = searchResult.subtitle
-            return cell
+                cell.configureLS(result: searchResult)
+                return cell
         }
         return UITableViewCell()
     }

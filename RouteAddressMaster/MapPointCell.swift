@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MapKit
+
 
 class MapPointCell: UITableViewCell {
 
@@ -17,5 +19,19 @@ class MapPointCell: UITableViewCell {
     override func awakeFromNib() {
         self.dropShadow()
     }
+    
+    @available(iOS 9.3, *)
+    func configureLS(result: MKLocalSearchCompletion) {
+        pointTitle.text = result.title
+        pointSubtitle.text = result.subtitle
+        
+    }
+    func configurePM(result: CLPlacemark) {
+        pointTitle.text = result.name
+        pointSubtitle.text = result.administrativeArea
+        
+    }
+    
+    
 
 }

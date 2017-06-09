@@ -84,6 +84,7 @@
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
@@ -123,6 +124,9 @@
                                     <constraint firstAttribute="height" constant="71" id="eWt-zm-Wmu"/>
                                     <constraint firstItem="t2B-Ce-YD2" firstAttribute="centerX" secondItem="PJ2-Q2-4FS" secondAttribute="centerX" id="w1v-lW-8ew"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

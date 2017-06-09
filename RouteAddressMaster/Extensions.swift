@@ -10,7 +10,14 @@ import Foundation
 import UIKit
 
 
+
+
+
+
 extension UIView {
+    
+    
+    
     
     func blur() {
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
@@ -25,6 +32,8 @@ extension UIView {
         self.layer.shadowRadius = 10
         
     }
+    
+    
     
     
 }
