@@ -12,19 +12,19 @@ import MapKit
 class RouteMapVC: UIViewController{
     
     @IBOutlet weak var mapView: MKMapView!
-    var coordinate: CLLocationCoordinate2D!
+    var passedCoordinate: CLLocationCoordinate2D!
     let locationManager = CLLocationManager()
-    var currentLocation: CLLocationCoordinate2D?
+    var userCoordinate: CLLocationCoordinate2D?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.follow
-        setLocation()
+        setDestination()
         centerMapOnLocation()
         locationManager.startUpdatingLocation()
-        currentLocation = locationManager.location?.coordinate
+        userCoordinate = locationManager.location?.coordinate
         
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -32,7 +32,6 @@ class RouteMapVC: UIViewController{
     }
     @IBAction func backPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-        
     }
     
     @IBAction func makeRoutePressed(_ sender: Any) {
@@ -43,8 +42,22 @@ class RouteMapVC: UIViewController{
 // Map works
 extension RouteMapVC: MKMapViewDelegate, CLLocationManagerDelegate  {
     
-    func setLocation() {
-        let CLLCoordType = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+    func locationAuthStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            mapView.showsUserLocation = true
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
+    }
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            mapView.showsUserLocation = true
+        }
+    }
+    
+    func setDestination() {
+        let CLLCoordType = CLLocationCoordinate2D(latitude: passedCoordinate.latitude, longitude: passedCoordinate.longitude)
         let anno = MKPointAnnotation()
         anno.coordinate = CLLCoordType
         mapView.addAnnotation(anno)
@@ -52,15 +65,19 @@ extension RouteMapVC: MKMapViewDelegate, CLLocationManagerDelegate  {
     
     // Increse visibility of place
     func centerMapOnLocation() {
-        let coordinationRegion = MKCoordinateRegionMakeWithDistance(coordinate, 2000, 2000)
+        let coordinationRegion = MKCoordinateRegionMakeWithDistance(passedCoordinate, 2000, 2000)
         mapView.setRegion(coordinationRegion, animated: true)
     }
     
     
     
     func buildRoute() {
-        let sourcePlacemark = MKPlacemark(coordinate: currentLocation!, addressDictionary: nil)
-        let destinationPlacemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
+        
+        guard let cl = userCoordinate else {
+            return
+        }
+        let sourcePlacemark = MKPlacemark(coordinate: cl, addressDictionary: nil)
+        let destinationPlacemark = MKPlacemark(coordinate: passedCoordinate, addressDictionary: nil)
         
         let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
         let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
@@ -124,27 +141,7 @@ extension RouteMapVC: MKMapViewDelegate, CLLocationManagerDelegate  {
     
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        currentLocation = manager.location?.coordinate
-        print(currentLocation ?? "no current location")
+        userCoordinate = manager.location?.coordinate
+        print(userCoordinate ?? "no current location")
     }
-    
-    
-    
-    func locationAuthStatus() {
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-            mapView.showsUserLocation = true
-        } else {
-            locationManager.requestWhenInUseAuthorization()
-        }
-        
-    }
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse {
-            mapView.showsUserLocation = true
-        }
-    }
-    
-    
-    
-    
 }

@@ -14,11 +14,13 @@ class MainVCSinceIOS93: UIViewController  {
     
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var addressTableView: UITableView!
+    @IBOutlet weak var backImg: UIImageView!
     var searchResults = [MKLocalSearchCompletion]()
     var searchCompleter = MKLocalSearchCompleter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //backImg.blur()
         searchCompleter.delegate = self
     }
     @IBAction func addressChanged(_ sender: Any) {
@@ -41,14 +43,13 @@ extension MainVCSinceIOS93: UITableViewDelegate, UITableViewDataSource {
             cell.pointSubtitle.text = searchResult.subtitle
             return cell
         }
-        
         return UITableViewCell()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showRoute", let routeVC = segue.destination as? RouteMapVC {
             if let c = sender as? CLLocationCoordinate2D {
-                routeVC.coordinate = c
+                routeVC.passedCoordinate = c
             }
         }
     }

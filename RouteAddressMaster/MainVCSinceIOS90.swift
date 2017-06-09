@@ -14,6 +14,7 @@ class MainVCSinceIOS90: UIViewController  {
     
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var addressTableView: UITableView!
+    @IBOutlet weak var backImg: UIImageView!
     var placemarksResuts: [CLPlacemark]?
     
     override func viewDidLoad() {
@@ -35,7 +36,7 @@ class MainVCSinceIOS90: UIViewController  {
     }
 }
 
-//MARK: get coordintaes of imput address
+//MARK: get coordintaes of input address
 extension MainVCSinceIOS90 {
     func getCoord(addressString:String,
                    completionHandler: @escaping([CLPlacemark]?, NSError?) -> Void ) {
@@ -77,7 +78,7 @@ extension MainVCSinceIOS90: UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showRoute", let routeVC = segue.destination as? RouteMapVC {
             if let c = sender as? CLLocationCoordinate2D {
-                routeVC.coordinate = c
+                routeVC.passedCoordinate = c
             }
         }
     }

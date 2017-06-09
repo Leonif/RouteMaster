@@ -20,8 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenshot_2" translatesAutoresizingMaskIntoConstraints="NO" id="iIz-jO-Tac">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="iIz-jO-Tac">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input address..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ytJ-Za-dOy">
                                 <rect key="frame" x="8" y="90" width="304" height="40"/>
@@ -50,26 +50,26 @@
                                                     <rect key="frame" x="5" y="2" width="310" height="61.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зоопарк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aBn-QX-9rF">
-                                                            <rect key="frame" x="48" y="18.5" width="254" height="15"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <rect key="frame" x="38" y="17.5" width="264" height="17"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-OR-ipa">
-                                                            <rect key="frame" x="10" y="16" width="30" height="30"/>
+                                                        <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-OR-ipa">
+                                                            <rect key="frame" x="10" y="21" width="20" height="20"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="30" id="7tL-SU-hel"/>
-                                                                <constraint firstAttribute="width" constant="30" id="sOy-14-N65"/>
+                                                                <constraint firstAttribute="height" constant="20" id="7tL-SU-hel"/>
+                                                                <constraint firstAttribute="width" constant="20" id="sOy-14-N65"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Киев, ул Анны Ахматовой 19Г" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3oJ-7e-5uc">
-                                                            <rect key="frame" x="48" y="37.5" width="254" height="14.5"/>
+                                                            <rect key="frame" x="38" y="38.5" width="264" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="1" green="0.9075592884" blue="0.42212387340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.63471137152777779" green="0.9075592884" blue="0.81687213728888886" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="3oJ-7e-5uc" secondAttribute="trailing" constant="8" id="17a-wY-QGQ"/>
                                                         <constraint firstItem="3oJ-7e-5uc" firstAttribute="top" secondItem="aBn-QX-9rF" secondAttribute="bottom" constant="4.5" id="1gF-2k-pPj"/>
@@ -107,18 +107,28 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="y2w-qa-aJt"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJ2-Q2-4FS">
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJ2-Q2-4FS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
-                                <color key="backgroundColor" red="0.34952799479166669" green="0.587890625" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where is your path brother" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2B-Ce-YD2">
+                                        <rect key="frame" x="52" y="24" width="216.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="0.7852632705" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.63471137150000001" green="0.9075592884" blue="0.81687213729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="t2B-Ce-YD2" firstAttribute="centerY" secondItem="PJ2-Q2-4FS" secondAttribute="centerY" id="1OZ-Ai-7SK"/>
                                     <constraint firstAttribute="height" constant="71" id="eWt-zm-Wmu"/>
+                                    <constraint firstItem="t2B-Ce-YD2" firstAttribute="centerX" secondItem="PJ2-Q2-4FS" secondAttribute="centerX" id="w1v-lW-8ew"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="PJ2-Q2-4FS" secondAttribute="trailing" id="20h-gj-hW0"/>
-                            <constraint firstItem="iIz-jO-Tac" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5Uq-hp-YQS"/>
+                            <constraint firstItem="iIz-jO-Tac" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="5Uq-hp-YQS"/>
                             <constraint firstItem="PJ2-Q2-4FS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7JM-rm-5LQ"/>
                             <constraint firstAttribute="trailing" secondItem="iIz-jO-Tac" secondAttribute="trailing" id="PPP-QU-dHV"/>
                             <constraint firstItem="ytJ-Za-dOy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="ZOC-UF-SRR"/>
@@ -136,6 +146,7 @@
                     <connections>
                         <outlet property="addressTableView" destination="mG1-FW-49P" id="EGC-rJ-TTT"/>
                         <outlet property="addressTextField" destination="ytJ-Za-dOy" id="dDB-oC-J2d"/>
+                        <outlet property="backImg" destination="iIz-jO-Tac" id="Isn-tj-nxO"/>
                         <segue destination="gnh-qG-8GO" kind="show" identifier="showRoute" id="TDw-Ox-TPz"/>
                     </connections>
                 </viewController>
@@ -216,8 +227,8 @@
     </scenes>
     <resources>
         <image name="002-arrows-5" width="128" height="128"/>
+        <image name="back" width="1920" height="1080"/>
         <image name="flag" width="128" height="128"/>
         <image name="route" width="128" height="128"/>
-        <image name="screenshot_2" width="1920" height="1080"/>
     </resources>
 </document>

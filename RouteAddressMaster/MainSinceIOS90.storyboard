@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenshot_2" translatesAutoresizingMaskIntoConstraints="NO" id="Zcu-7K-Wjx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Zcu-7K-Wjx">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input address..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rtH-67-BiH">
@@ -137,6 +137,7 @@
                     <connections>
                         <outlet property="addressTableView" destination="2kh-Bh-4tw" id="PUK-5k-8kd"/>
                         <outlet property="addressTextField" destination="rtH-67-BiH" id="4vk-LV-Lpw"/>
+                        <outlet property="backImg" destination="Zcu-7K-Wjx" id="Tx4-DG-Rd8"/>
                         <segue destination="z26-33-LcS" kind="show" identifier="showRoute" id="1XM-SO-9VJ"/>
                     </connections>
                 </viewController>
@@ -217,8 +218,8 @@
     </scenes>
     <resources>
         <image name="002-arrows-5" width="128" height="128"/>
+        <image name="back" width="1920" height="1080"/>
         <image name="flag" width="128" height="128"/>
         <image name="route" width="128" height="128"/>
-        <image name="screenshot_2" width="1920" height="1080"/>
     </resources>
 </document>

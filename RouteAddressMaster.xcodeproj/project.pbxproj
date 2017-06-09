@@ -23,6 +23,7 @@
 		79C0DB411EEA860A0042A0C5 /* MainVCSinceIOS90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0DB3F1EEA82170042A0C5 /* MainVCSinceIOS90.swift */; };
 		79C0DB421EEA86BA0042A0C5 /* MainSinceIOS90.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C0DB3C1EEA7FE90042A0C5 /* MainSinceIOS90.storyboard */; };
 		79C0DB451EEAA7E50042A0C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C0DB441EEAA7E50042A0C5 /* MapKit.framework */; };
+		79C0DB471EEAB97A0042A0C5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0DB461EEAB97A0042A0C5 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		79C0DB3C1EEA7FE90042A0C5 /* MainSinceIOS90.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainSinceIOS90.storyboard; sourceTree = "<group>"; };
 		79C0DB3F1EEA82170042A0C5 /* MainVCSinceIOS90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVCSinceIOS90.swift; sourceTree = "<group>"; };
 		79C0DB441EEAA7E50042A0C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		79C0DB461EEAB97A0042A0C5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		792EE7E91EE9BB7D00470669 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				79C0DB461EEAB97A0042A0C5 /* Extensions.swift */,
 				792EE7E01EE99CA700470669 /* Info.plist */,
 				792EE7DB1EE99CA700470669 /* Assets.xcassets */,
 			);
@@ -247,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C0DB471EEAB97A0042A0C5 /* Extensions.swift in Sources */,
 				792EE7EB1EE9BBB700470669 /* MapPointCell.swift in Sources */,
 				792EE7ED1EE9CEA400470669 /* RouteMapVC.swift in Sources */,
 				792EE7D71EE99CA700470669 /* MainVCSinceIOS93.swift in Sources */,
