@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-RouteAddressMaster IOS 9.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-RouteAddressMaster IOS 9.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SCLAlertView-iOS9.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SCLAlertView-iOS9.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>25539E128A5C72C1B224DD0604B37FEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DE639847A698CFB87BC9B9AC12AD498</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B123F9A4D05EDF46AF363CF2F7EE5882</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF10039480AFA35E79888E642A76AD46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -218,7 +218,7 @@
     </scenes>
     <resources>
         <image name="002-arrows-5" width="128" height="128"/>
-        <image name="back" width="1920" height="1080"/>
+        <image name="back" width="3868" height="2132"/>
         <image name="flag" width="128" height="128"/>
         <image name="route" width="128" height="128"/>
     </resources>

@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import SCLAlertView
 
 class RouteMapVC: UIViewController{
     
@@ -74,6 +75,7 @@ extension RouteMapVC: MKMapViewDelegate, CLLocationManagerDelegate  {
     func buildRoute() {
         
         guard let cl = userCoordinate else {
+            SCLAlertView().showInfo("No current location", subTitle: "Please grant access")
             return
         }
         let sourcePlacemark = MKPlacemark(coordinate: cl, addressDictionary: nil)

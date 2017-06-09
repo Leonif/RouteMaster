@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26C423070CFAD56AA1543285 /* Pods_RouteAddressMaster_IOS_9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A19AB59D2C5D2B47D681347 /* Pods_RouteAddressMaster_IOS_9.framework */; };
 		792EE7D51EE99CA700470669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7D41EE99CA700470669 /* AppDelegate.swift */; };
 		792EE7D71EE99CA700470669 /* MainVCSinceIOS93.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EE7D61EE99CA700470669 /* MainVCSinceIOS93.swift */; };
 		792EE7DA1EE99CA700470669 /* MainSinceIOS93.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7D81EE99CA700470669 /* MainSinceIOS93.storyboard */; };
@@ -24,9 +25,13 @@
 		79C0DB421EEA86BA0042A0C5 /* MainSinceIOS90.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C0DB3C1EEA7FE90042A0C5 /* MainSinceIOS90.storyboard */; };
 		79C0DB451EEAA7E50042A0C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C0DB441EEAA7E50042A0C5 /* MapKit.framework */; };
 		79C0DB471EEAB97A0042A0C5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0DB461EEAB97A0042A0C5 /* Extensions.swift */; };
+		F6F20ACC58F91340EA8BA72B /* Pods_RouteAddressMaster_IOS_9_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E44A4EBD0D11CAF0BDAA5F /* Pods_RouteAddressMaster_IOS_9_3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		071460A15E2319A72A2B4F3D /* Pods-RouteAddressMaster IOS 9.3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteAddressMaster IOS 9.3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouteAddressMaster IOS 9.3/Pods-RouteAddressMaster IOS 9.3.debug.xcconfig"; sourceTree = "<group>"; };
+		1900FFCB4C7BB246976C8374 /* Pods-RouteAddressMaster IOS 9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteAddressMaster IOS 9.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouteAddressMaster IOS 9/Pods-RouteAddressMaster IOS 9.release.xcconfig"; sourceTree = "<group>"; };
+		5A19AB59D2C5D2B47D681347 /* Pods_RouteAddressMaster_IOS_9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteAddressMaster_IOS_9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		792EE7D11EE99CA700470669 /* RouteAddressMaster IOS 9.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RouteAddressMaster IOS 9.3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		792EE7D41EE99CA700470669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		792EE7D61EE99CA700470669 /* MainVCSinceIOS93.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCSinceIOS93.swift; sourceTree = "<group>"; };
@@ -42,6 +47,9 @@
 		79C0DB3F1EEA82170042A0C5 /* MainVCSinceIOS90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVCSinceIOS90.swift; sourceTree = "<group>"; };
 		79C0DB441EEAA7E50042A0C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		79C0DB461EEAB97A0042A0C5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		85E44A4EBD0D11CAF0BDAA5F /* Pods_RouteAddressMaster_IOS_9_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteAddressMaster_IOS_9_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B68F3986ED12CD8CDA51A7 /* Pods-RouteAddressMaster IOS 9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteAddressMaster IOS 9.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouteAddressMaster IOS 9/Pods-RouteAddressMaster IOS 9.debug.xcconfig"; sourceTree = "<group>"; };
+		D9B4939EEC84D96F7F9A615C /* Pods-RouteAddressMaster IOS 9.3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteAddressMaster IOS 9.3.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouteAddressMaster IOS 9.3/Pods-RouteAddressMaster IOS 9.3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F20ACC58F91340EA8BA72B /* Pods_RouteAddressMaster_IOS_9_3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C0DB451EEAA7E50042A0C5 /* MapKit.framework in Frameworks */,
+				26C423070CFAD56AA1543285 /* Pods_RouteAddressMaster_IOS_9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +80,7 @@
 				792EE7D21EE99CA700470669 /* Products */,
 				79C0DB3B1EEA7CB10042A0C5 /* RouteAddressMaster copy-Info.plist */,
 				79C0DB431EEAA7E50042A0C5 /* Frameworks */,
+				97C64F4B79803AFA614F2EC5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,8 +147,21 @@
 			isa = PBXGroup;
 			children = (
 				79C0DB441EEAA7E50042A0C5 /* MapKit.framework */,
+				5A19AB59D2C5D2B47D681347 /* Pods_RouteAddressMaster_IOS_9.framework */,
+				85E44A4EBD0D11CAF0BDAA5F /* Pods_RouteAddressMaster_IOS_9_3.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97C64F4B79803AFA614F2EC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1B68F3986ED12CD8CDA51A7 /* Pods-RouteAddressMaster IOS 9.debug.xcconfig */,
+				1900FFCB4C7BB246976C8374 /* Pods-RouteAddressMaster IOS 9.release.xcconfig */,
+				071460A15E2319A72A2B4F3D /* Pods-RouteAddressMaster IOS 9.3.debug.xcconfig */,
+				D9B4939EEC84D96F7F9A615C /* Pods-RouteAddressMaster IOS 9.3.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 792EE7E31EE99CA700470669 /* Build configuration list for PBXNativeTarget "RouteAddressMaster IOS 9.3" */;
 			buildPhases = (
+				DBD43A97A3F7A6FC5D599FF9 /* [CP] Check Pods Manifest.lock */,
 				792EE7CD1EE99CA700470669 /* Sources */,
 				792EE7CE1EE99CA700470669 /* Frameworks */,
 				792EE7CF1EE99CA700470669 /* Resources */,
+				B28DE0FB99999F211F6B756E /* [CP] Embed Pods Frameworks */,
+				09251BCC190ABD7C7FCFE25F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79C0DB371EEA7CB10042A0C5 /* Build configuration list for PBXNativeTarget "RouteAddressMaster IOS 9" */;
 			buildPhases = (
+				CFC76AC30FD2F82E4DF7D8D8 /* [CP] Check Pods Manifest.lock */,
 				79C0DB2D1EEA7CB10042A0C5 /* Sources */,
 				79C0DB321EEA7CB10042A0C5 /* Frameworks */,
 				79C0DB331EEA7CB10042A0C5 /* Resources */,
+				BB0922212F0F9690F53A62C8 /* [CP] Embed Pods Frameworks */,
+				1D9CF0849B0207F82240D7B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +274,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09251BCC190ABD7C7FCFE25F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteAddressMaster IOS 9.3/Pods-RouteAddressMaster IOS 9.3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D9CF0849B0207F82240D7B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteAddressMaster IOS 9/Pods-RouteAddressMaster IOS 9-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B28DE0FB99999F211F6B756E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteAddressMaster IOS 9.3/Pods-RouteAddressMaster IOS 9.3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB0922212F0F9690F53A62C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteAddressMaster IOS 9/Pods-RouteAddressMaster IOS 9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFC76AC30FD2F82E4DF7D8D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBD43A97A3F7A6FC5D599FF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		792EE7CD1EE99CA700470669 /* Sources */ = {
@@ -386,6 +509,7 @@
 		};
 		792EE7E41EE99CA700470669 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071460A15E2319A72A2B4F3D /* Pods-RouteAddressMaster IOS 9.3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-93";
 				DEVELOPMENT_TEAM = 379294YDPQ;
@@ -400,6 +524,7 @@
 		};
 		792EE7E51EE99CA700470669 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9B4939EEC84D96F7F9A615C /* Pods-RouteAddressMaster IOS 9.3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-93";
 				DEVELOPMENT_TEAM = 379294YDPQ;
@@ -414,6 +539,7 @@
 		};
 		79C0DB381EEA7CB10042A0C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B68F3986ED12CD8CDA51A7 /* Pods-RouteAddressMaster IOS 9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-90";
 				DEVELOPMENT_TEAM = 379294YDPQ;
@@ -428,6 +554,7 @@
 		};
 		79C0DB391EEA7CB10042A0C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1900FFCB4C7BB246976C8374 /* Pods-RouteAddressMaster IOS 9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-90";
 				DEVELOPMENT_TEAM = 379294YDPQ;

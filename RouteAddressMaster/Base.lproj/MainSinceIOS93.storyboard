@@ -167,16 +167,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8BN-N4-IrY">
-                                <rect key="frame" x="0.0" y="91" width="320" height="477"/>
+                                <rect key="frame" x="0.0" y="71" width="320" height="497"/>
                             </mapView>
                             <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EA6-rF-Jbc">
-                                <rect key="frame" x="0.0" y="20" width="320" height="71"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jve-cc-QCx">
-                                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                        <rect key="frame" x="15" y="20" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="OBl-Z2-c3z"/>
-                                            <constraint firstAttribute="height" constant="50" id="sr8-kT-Kf7"/>
+                                            <constraint firstAttribute="width" constant="40" id="OBl-Z2-c3z"/>
+                                            <constraint firstAttribute="height" constant="40" id="sr8-kT-Kf7"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="002-arrows-5"/>
                                         <connections>
@@ -184,10 +184,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RN-Ka-M1a">
-                                        <rect key="frame" x="262" y="8" width="50" height="50"/>
+                                        <rect key="frame" x="265" y="20" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="fWf-bA-6D1"/>
-                                            <constraint firstAttribute="height" constant="50" id="lzt-dt-ypN"/>
+                                            <constraint firstAttribute="width" constant="40" id="fWf-bA-6D1"/>
+                                            <constraint firstAttribute="height" constant="40" id="lzt-dt-ypN"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="route"/>
                                         <connections>
@@ -195,12 +195,12 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.34952799480000002" green="0.587890625" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.63471137150000001" green="0.9075592884" blue="0.81687213729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="9RN-Ka-M1a" firstAttribute="top" secondItem="EA6-rF-Jbc" secondAttribute="top" constant="8" id="Amz-O6-SBM"/>
-                                    <constraint firstAttribute="trailing" secondItem="9RN-Ka-M1a" secondAttribute="trailing" constant="8" id="HmZ-Ad-aIZ"/>
-                                    <constraint firstItem="Jve-cc-QCx" firstAttribute="leading" secondItem="EA6-rF-Jbc" secondAttribute="leading" constant="8" id="aeJ-NY-4X0"/>
-                                    <constraint firstItem="Jve-cc-QCx" firstAttribute="top" secondItem="EA6-rF-Jbc" secondAttribute="top" constant="8" id="oCM-cK-Iwo"/>
+                                    <constraint firstItem="9RN-Ka-M1a" firstAttribute="top" secondItem="EA6-rF-Jbc" secondAttribute="top" constant="20" id="Amz-O6-SBM"/>
+                                    <constraint firstAttribute="trailing" secondItem="9RN-Ka-M1a" secondAttribute="trailing" constant="15" id="HmZ-Ad-aIZ"/>
+                                    <constraint firstItem="Jve-cc-QCx" firstAttribute="leading" secondItem="EA6-rF-Jbc" secondAttribute="leading" constant="15" id="aeJ-NY-4X0"/>
+                                    <constraint firstItem="Jve-cc-QCx" firstAttribute="top" secondItem="EA6-rF-Jbc" secondAttribute="top" constant="20" id="oCM-cK-Iwo"/>
                                     <constraint firstAttribute="height" constant="71" id="yjK-Vn-Cdf"/>
                                 </constraints>
                             </view>
@@ -209,7 +209,7 @@
                         <constraints>
                             <constraint firstItem="8BN-N4-IrY" firstAttribute="leading" secondItem="kzG-Hk-FwD" secondAttribute="leading" id="319-Nv-MXp"/>
                             <constraint firstItem="fZk-Pe-Adq" firstAttribute="top" secondItem="8BN-N4-IrY" secondAttribute="bottom" id="9hf-QD-kd7"/>
-                            <constraint firstItem="EA6-rF-Jbc" firstAttribute="top" secondItem="kzG-Hk-FwD" secondAttribute="top" constant="20" id="Dik-aW-8Nx"/>
+                            <constraint firstItem="EA6-rF-Jbc" firstAttribute="top" secondItem="kzG-Hk-FwD" secondAttribute="top" id="Dik-aW-8Nx"/>
                             <constraint firstAttribute="trailing" secondItem="EA6-rF-Jbc" secondAttribute="trailing" id="VoU-hm-UFS"/>
                             <constraint firstItem="8BN-N4-IrY" firstAttribute="top" secondItem="EA6-rF-Jbc" secondAttribute="bottom" id="Vwm-kd-lav"/>
                             <constraint firstItem="EA6-rF-Jbc" firstAttribute="leading" secondItem="kzG-Hk-FwD" secondAttribute="leading" id="ZAS-xY-UJb"/>
@@ -227,7 +227,7 @@
     </scenes>
     <resources>
         <image name="002-arrows-5" width="128" height="128"/>
-        <image name="back" width="1920" height="1080"/>
+        <image name="back" width="3868" height="2132"/>
         <image name="flag" width="128" height="128"/>
         <image name="route" width="128" height="128"/>
     </resources>

@@ -1,0 +1,6 @@
+framework module Pods_RouteAddressMaster_IOS_9_3 {
+  umbrella header "Pods-RouteAddressMaster IOS 9.3-umbrella.h"
+
+  export *
+  module * { export * }
+}
