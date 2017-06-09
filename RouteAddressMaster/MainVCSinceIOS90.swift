@@ -60,22 +60,6 @@ extension MainVCSinceIOS90 {
     
     
     
-//    func getCoordinate( addressString : String,
-//                        completionHandler: @escaping(CLLocationCoordinate2D, NSError?) -> Void ) {
-//        let geocoder = CLGeocoder()
-//        geocoder.geocodeAddressString(addressString) { (placemarks, error) in
-//            if error == nil {
-//                if let placemark = placemarks?[0] {
-//                    let location = placemark.location!
-//                    
-//                    completionHandler(location.coordinate, nil)
-//                    return
-//                }
-//            }
-//            
-//            completionHandler(kCLLocationCoordinate2DInvalid, error as NSError?)
-//        }
-//    }
     
 }
 
@@ -91,7 +75,7 @@ extension MainVCSinceIOS90: UITableViewDelegate, UITableViewDataSource {
         if let searchResult = placemarksResuts?[indexPath.row] {
         let cell = addressTableView.dequeueReusableCell(withIdentifier: "MapCell") as! MapPointCell
         cell.pointTitle.text = searchResult.name
-        cell.pointSubtitle.text = ""
+        cell.pointSubtitle.text = searchResult.subAdministrativeArea
         
         return cell
         }

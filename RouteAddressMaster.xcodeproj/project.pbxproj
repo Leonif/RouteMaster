@@ -22,6 +22,7 @@
 		79C0DB361EEA7CB10042A0C5 /* MainSinceIOS93.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792EE7D81EE99CA700470669 /* MainSinceIOS93.storyboard */; };
 		79C0DB411EEA860A0042A0C5 /* MainVCSinceIOS90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0DB3F1EEA82170042A0C5 /* MainVCSinceIOS90.swift */; };
 		79C0DB421EEA86BA0042A0C5 /* MainSinceIOS90.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C0DB3C1EEA7FE90042A0C5 /* MainSinceIOS90.storyboard */; };
+		79C0DB451EEAA7E50042A0C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C0DB441EEAA7E50042A0C5 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		79C0DB3B1EEA7CB10042A0C5 /* RouteAddressMaster copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RouteAddressMaster copy-Info.plist"; path = "/Users/leonif1/CODDING/TEST TASKS/RouteAddressMaster/RouteAddressMaster copy-Info.plist"; sourceTree = "<absolute>"; };
 		79C0DB3C1EEA7FE90042A0C5 /* MainSinceIOS90.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainSinceIOS90.storyboard; sourceTree = "<group>"; };
 		79C0DB3F1EEA82170042A0C5 /* MainVCSinceIOS90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVCSinceIOS90.swift; sourceTree = "<group>"; };
+		79C0DB441EEAA7E50042A0C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C0DB451EEAA7E50042A0C5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +67,7 @@
 				792EE7D31EE99CA700470669 /* RouteAddressMaster */,
 				792EE7D21EE99CA700470669 /* Products */,
 				79C0DB3B1EEA7CB10042A0C5 /* RouteAddressMaster copy-Info.plist */,
+				79C0DB431EEAA7E50042A0C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		79C0DB431EEAA7E50042A0C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79C0DB441EEAA7E50042A0C5 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,6 +191,11 @@
 					};
 					79C0DB2C1EEA7CB10042A0C5 = {
 						DevelopmentTeam = 379294YDPQ;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

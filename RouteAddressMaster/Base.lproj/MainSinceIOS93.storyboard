@@ -172,9 +172,22 @@
                                             <action selector="backPressed:" destination="gnh-qG-8GO" eventType="touchUpInside" id="fvU-ag-2Zv"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RN-Ka-M1a">
+                                        <rect key="frame" x="262" y="8" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="fWf-bA-6D1"/>
+                                            <constraint firstAttribute="height" constant="50" id="lzt-dt-ypN"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="route"/>
+                                        <connections>
+                                            <action selector="makeRoutePressed:" destination="gnh-qG-8GO" eventType="touchUpInside" id="X3G-1d-32C"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.34952799480000002" green="0.587890625" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="9RN-Ka-M1a" firstAttribute="top" secondItem="EA6-rF-Jbc" secondAttribute="top" constant="8" id="Amz-O6-SBM"/>
+                                    <constraint firstAttribute="trailing" secondItem="9RN-Ka-M1a" secondAttribute="trailing" constant="8" id="HmZ-Ad-aIZ"/>
                                     <constraint firstItem="Jve-cc-QCx" firstAttribute="leading" secondItem="EA6-rF-Jbc" secondAttribute="leading" constant="8" id="aeJ-NY-4X0"/>
                                     <constraint firstItem="Jve-cc-QCx" firstAttribute="top" secondItem="EA6-rF-Jbc" secondAttribute="top" constant="8" id="oCM-cK-Iwo"/>
                                     <constraint firstAttribute="height" constant="71" id="yjK-Vn-Cdf"/>
@@ -204,6 +217,7 @@
     <resources>
         <image name="002-arrows-5" width="128" height="128"/>
         <image name="flag" width="128" height="128"/>
+        <image name="route" width="128" height="128"/>
         <image name="screenshot_2" width="1920" height="1080"/>
     </resources>
 </document>
