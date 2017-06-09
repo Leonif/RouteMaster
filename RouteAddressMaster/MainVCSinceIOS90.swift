@@ -36,6 +36,15 @@ class MainVCSinceIOS90: UIViewController  {
     }
 }
 
+extension MainVCSinceIOS90: UITextFieldDelegate {
+    //hide keyboard by press ENter
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+
 //MARK: get coordintaes of input address
 extension MainVCSinceIOS90 {
     func getCoord(addressString:String,
@@ -72,11 +81,11 @@ extension MainVCSinceIOS90: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "showRoute", sender: placemarksResuts?[indexPath.row].location?.coordinate)
+        performSegue(withIdentifier: Segues.showRoute.rawValue, sender: placemarksResuts?[indexPath.row].location?.coordinate)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showRoute", let routeVC = segue.destination as? RouteMapVC {
+        if segue.identifier == Segues.showRoute.rawValue, let routeVC = segue.destination as? RouteMapVC {
             if let c = sender as? CLLocationCoordinate2D {
                 routeVC.passedCoordinate = c
             }

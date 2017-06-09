@@ -18,14 +18,28 @@ class MainVCSinceIOS93: UIViewController  {
     var searchResults = [MKLocalSearchCompletion]()
     var searchCompleter = MKLocalSearchCompleter()
 
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //backImg.blur()
         searchCompleter.delegate = self
+        addressTextField.delegate = self
     }
     @IBAction func addressChanged(_ sender: Any) {
         print(addressTextField.text ?? "")
         searchCompleter.queryFragment = addressTextField.text ?? ""
+    }
+}
+
+
+extension MainVCSinceIOS93: UITextFieldDelegate {
+    //hide keyboard by press ENter
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
 
@@ -40,6 +54,7 @@ extension MainVCSinceIOS93: UITableViewDelegate, UITableViewDataSource {
         let searchResult = searchResults[indexPath.row]
             if let cell = addressTableView.dequeueReusableCell(withIdentifier: "MapCell") as? MapPointCell {
             cell.pointTitle.text = searchResult.title
+            
             cell.pointSubtitle.text = searchResult.subtitle
             return cell
         }
@@ -47,7 +62,7 @@ extension MainVCSinceIOS93: UITableViewDelegate, UITableViewDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showRoute", let routeVC = segue.destination as? RouteMapVC {
+        if segue.identifier == Segues.showRoute.rawValue, let routeVC = segue.destination as? RouteMapVC {
             if let c = sender as? CLLocationCoordinate2D {
                 routeVC.passedCoordinate = c
             }
@@ -68,7 +83,7 @@ extension MainVCSinceIOS93: MKLocalSearchCompleterDelegate {
         search.start { (response, error) in
             let coordinate = response?.mapItems[0].placemark.coordinate
             print(String(describing: coordinate))
-            self.performSegue(withIdentifier: "showRoute", sender: coordinate)
+            self.performSegue(withIdentifier: Segues.showRoute.rawValue, sender: coordinate)
         }
     }
 

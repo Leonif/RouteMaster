@@ -25,6 +25,9 @@
 		79C0DB421EEA86BA0042A0C5 /* MainSinceIOS90.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C0DB3C1EEA7FE90042A0C5 /* MainSinceIOS90.storyboard */; };
 		79C0DB451EEAA7E50042A0C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C0DB441EEAA7E50042A0C5 /* MapKit.framework */; };
 		79C0DB471EEAB97A0042A0C5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0DB461EEAB97A0042A0C5 /* Extensions.swift */; };
+		79C0DB4C1EEAFC310042A0C5 /* Constatnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0DB4B1EEAFC310042A0C5 /* Constatnts.swift */; };
+		79C0DB4D1EEAFC680042A0C5 /* Constatnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0DB4B1EEAFC310042A0C5 /* Constatnts.swift */; };
+		79C0DB4E1EEAFC6E0042A0C5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0DB461EEAB97A0042A0C5 /* Extensions.swift */; };
 		F6F20ACC58F91340EA8BA72B /* Pods_RouteAddressMaster_IOS_9_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E44A4EBD0D11CAF0BDAA5F /* Pods_RouteAddressMaster_IOS_9_3.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,7 @@
 		79C0DB3F1EEA82170042A0C5 /* MainVCSinceIOS90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVCSinceIOS90.swift; sourceTree = "<group>"; };
 		79C0DB441EEAA7E50042A0C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		79C0DB461EEAB97A0042A0C5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		79C0DB4B1EEAFC310042A0C5 /* Constatnts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constatnts.swift; sourceTree = "<group>"; };
 		85E44A4EBD0D11CAF0BDAA5F /* Pods_RouteAddressMaster_IOS_9_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteAddressMaster_IOS_9_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B68F3986ED12CD8CDA51A7 /* Pods-RouteAddressMaster IOS 9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteAddressMaster IOS 9.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouteAddressMaster IOS 9/Pods-RouteAddressMaster IOS 9.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B4939EEC84D96F7F9A615C /* Pods-RouteAddressMaster IOS 9.3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteAddressMaster IOS 9.3.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouteAddressMaster IOS 9.3/Pods-RouteAddressMaster IOS 9.3.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				79C0DB461EEAB97A0042A0C5 /* Extensions.swift */,
+				79C0DB4B1EEAFC310042A0C5 /* Constatnts.swift */,
 				792EE7E01EE99CA700470669 /* Info.plist */,
 				792EE7DB1EE99CA700470669 /* Assets.xcassets */,
 			);
@@ -375,6 +380,7 @@
 			files = (
 				79C0DB471EEAB97A0042A0C5 /* Extensions.swift in Sources */,
 				792EE7EB1EE9BBB700470669 /* MapPointCell.swift in Sources */,
+				79C0DB4C1EEAFC310042A0C5 /* Constatnts.swift in Sources */,
 				792EE7ED1EE9CEA400470669 /* RouteMapVC.swift in Sources */,
 				792EE7D71EE99CA700470669 /* MainVCSinceIOS93.swift in Sources */,
 				792EE7D51EE99CA700470669 /* AppDelegate.swift in Sources */,
@@ -386,8 +392,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C0DB2E1EEA7CB10042A0C5 /* MapPointCell.swift in Sources */,
+				79C0DB4E1EEAFC6E0042A0C5 /* Extensions.swift in Sources */,
 				79C0DB411EEA860A0042A0C5 /* MainVCSinceIOS90.swift in Sources */,
 				79C0DB2F1EEA7CB10042A0C5 /* RouteMapVC.swift in Sources */,
+				79C0DB4D1EEAFC680042A0C5 /* Constatnts.swift in Sources */,
 				79C0DB311EEA7CB10042A0C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

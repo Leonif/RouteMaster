@@ -36,7 +36,7 @@
                                 </connections>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="113" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mG1-FW-49P">
-                                <rect key="frame" x="0.0" y="138" width="320" height="430"/>
+                                <rect key="frame" x="0.0" y="130" width="320" height="438"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapCell" rowHeight="69" id="hCa-CA-bhN" customClass="MapPointCell" customModule="RouteAddressMaster_IOS_9" customModuleProvider="target">
@@ -47,23 +47,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZB-EO-dnh">
-                                                    <rect key="frame" x="5" y="2" width="310" height="61.5"/>
+                                                    <rect key="frame" x="5" y="10" width="310" height="49"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зоопарк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aBn-QX-9rF">
-                                                            <rect key="frame" x="38" y="17.5" width="264" height="17"/>
+                                                            <rect key="frame" x="38" y="11.5" width="264" height="17"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-OR-ipa">
-                                                            <rect key="frame" x="10" y="21" width="20" height="20"/>
+                                                            <rect key="frame" x="10" y="15" width="20" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="7tL-SU-hel"/>
                                                                 <constraint firstAttribute="width" constant="20" id="sOy-14-N65"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Киев, ул Анны Ахматовой 19Г" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3oJ-7e-5uc">
-                                                            <rect key="frame" x="38" y="38.5" width="264" height="14.5"/>
+                                                            <rect key="frame" x="38" y="32.5" width="264" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -89,8 +89,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="qZB-EO-dnh" firstAttribute="leading" secondItem="tEq-xk-GP3" secondAttribute="leading" constant="5" id="M7K-Pw-vNe"/>
-                                                <constraint firstItem="qZB-EO-dnh" firstAttribute="top" secondItem="tEq-xk-GP3" secondAttribute="top" constant="2" id="aRn-az-oLo"/>
-                                                <constraint firstAttribute="bottom" secondItem="qZB-EO-dnh" secondAttribute="bottom" constant="5" id="gIT-Yg-yWM"/>
+                                                <constraint firstItem="qZB-EO-dnh" firstAttribute="top" secondItem="tEq-xk-GP3" secondAttribute="top" constant="10" id="aRn-az-oLo"/>
+                                                <constraint firstAttribute="bottom" secondItem="qZB-EO-dnh" secondAttribute="bottom" constant="10" id="gIT-Yg-yWM"/>
                                                 <constraint firstAttribute="trailing" secondItem="qZB-EO-dnh" secondAttribute="trailing" constant="5" id="gOy-q7-arM"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -139,7 +139,7 @@
                             <constraint firstItem="mG1-FW-49P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="izo-gv-QD1"/>
                             <constraint firstItem="PJ2-Q2-4FS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kEW-fm-2D3"/>
                             <constraint firstItem="iIz-jO-Tac" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="khb-YP-Y0d"/>
-                            <constraint firstItem="mG1-FW-49P" firstAttribute="top" secondItem="ytJ-Za-dOy" secondAttribute="bottom" constant="8" id="njH-ms-Bdg"/>
+                            <constraint firstItem="mG1-FW-49P" firstAttribute="top" secondItem="ytJ-Za-dOy" secondAttribute="bottom" id="njH-ms-Bdg"/>
                             <constraint firstAttribute="trailing" secondItem="mG1-FW-49P" secondAttribute="trailing" id="u9A-vm-31Z"/>
                         </constraints>
                     </view>
@@ -194,13 +194,21 @@
                                             <action selector="makeRoutePressed:" destination="gnh-qG-8GO" eventType="touchUpInside" id="X3G-1d-32C"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance: 0 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jJ-gs-W66">
+                                        <rect key="frame" x="98" y="23.5" width="124.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="0.7852632705" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.63471137150000001" green="0.9075592884" blue="0.81687213729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="9RN-Ka-M1a" firstAttribute="top" secondItem="EA6-rF-Jbc" secondAttribute="top" constant="20" id="Amz-O6-SBM"/>
                                     <constraint firstAttribute="trailing" secondItem="9RN-Ka-M1a" secondAttribute="trailing" constant="15" id="HmZ-Ad-aIZ"/>
                                     <constraint firstItem="Jve-cc-QCx" firstAttribute="leading" secondItem="EA6-rF-Jbc" secondAttribute="leading" constant="15" id="aeJ-NY-4X0"/>
+                                    <constraint firstItem="8jJ-gs-W66" firstAttribute="centerY" secondItem="EA6-rF-Jbc" secondAttribute="centerY" id="hgh-iE-nVc"/>
                                     <constraint firstItem="Jve-cc-QCx" firstAttribute="top" secondItem="EA6-rF-Jbc" secondAttribute="top" constant="20" id="oCM-cK-Iwo"/>
+                                    <constraint firstItem="8jJ-gs-W66" firstAttribute="centerX" secondItem="EA6-rF-Jbc" secondAttribute="centerX" id="x5W-65-kOd"/>
                                     <constraint firstAttribute="height" constant="71" id="yjK-Vn-Cdf"/>
                                 </constraints>
                             </view>
@@ -217,6 +225,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="distanceLabel" destination="8jJ-gs-W66" id="YNZ-yd-B1y"/>
                         <outlet property="mapView" destination="8BN-N4-IrY" id="iMa-g9-SvN"/>
                     </connections>
                 </viewController>

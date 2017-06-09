@@ -19,6 +19,12 @@ extension UIView {
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(blurEffectView)
     }
+    func dropShadow() {
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOffset = CGSize(width: 10, height: 6)
+        self.layer.shadowRadius = 10
+        
+    }
     
     
 }

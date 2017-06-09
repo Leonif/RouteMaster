@@ -12,6 +12,7 @@ import SCLAlertView
 
 class RouteMapVC: UIViewController{
     
+    @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     var passedCoordinate: CLLocationCoordinate2D!
     let locationManager = CLLocationManager()
@@ -125,6 +126,10 @@ extension RouteMapVC: MKMapViewDelegate, CLLocationManagerDelegate  {
             }
             
             let route = response.routes[0]
+            let distance = response.routes[0].distance
+            
+            self.distanceLabel.text = "Distance: \(distance/1000) km"
+            
             self.mapView.add((route.polyline), level: MKOverlayLevel.aboveRoads)
             
             let rect = route.polyline.boundingMapRect
@@ -135,7 +140,7 @@ extension RouteMapVC: MKMapViewDelegate, CLLocationManagerDelegate  {
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay)
-        renderer.strokeColor = UIColor.red
+        renderer.strokeColor = UIColor(colorLiteralRed: 0, green: 0, blue: 255, alpha: 0.7)
         renderer.lineWidth = 4.0
         
         return renderer
