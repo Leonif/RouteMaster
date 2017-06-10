@@ -15,3 +15,4 @@ Implementation:
   - CLGeocoder (according to task above support iOS 9)
   - Apple autocomplete (supported since iOS 9.3)
 2. Cocoapods has external library with alert controler in case user refused access geolocation
+<img width="317" alt="alert" src="https://user-images.githubusercontent.com/22885814/27000699-7e79de14-4dc0-11e7-9e8f-1ac49b64e4f2.png">
