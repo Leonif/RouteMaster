@@ -13,7 +13,7 @@ Task requirements:
 
 Implementation:
 
-<img width="317" alt="screen1" src="https://user-images.githubusercontent.com/22885814/27000714-de146b28-4dc0-11e7-8622-b27e1d3657d2.png">
+<img width="317" alt="screen1" src="https://user-images.githubusercontent.com/22885814/27000714-de146b28-4dc0-11e7-8622-b27e1d3657d2.png"> <img width="318" alt="screen2" src="https://user-images.githubusercontent.com/22885814/27000744-83549f54-4dc1-11e7-9b8d-b4fb29c0ee32.png">
 
 1. Two targets were created in order to use two approach of address searching: 
   - CLGeocoder (according to task above support iOS 9)
