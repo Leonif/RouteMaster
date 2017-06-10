@@ -9,3 +9,9 @@ Task requeraments:
 5. Need to support iOS 9 and 10.
 6. App need be run on iPhone only
 7. Rest of implementation as you wish
+
+Implementation:
+1. Two targets were created in order to use two approach of address searching: 
+  - CLPlacemark and 
+  - Apple autocomplete
+2. Cocoapods has external library with alert controler in case user refused access geolocation
