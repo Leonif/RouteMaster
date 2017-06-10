@@ -12,6 +12,6 @@ Task requeraments:
 
 Implementation:
 1. Two targets were created in order to use two approach of address searching: 
-  - CLPlacemark and 
+  - CLGeocoder and 
   - Apple autocomplete
 2. Cocoapods has external library with alert controler in case user refused access geolocation
